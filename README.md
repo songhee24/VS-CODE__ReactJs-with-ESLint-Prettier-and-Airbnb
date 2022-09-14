@@ -114,5 +114,11 @@ npx eslint --init
 
 ![Screen Shot 2022-09-15 at 00 27 27](https://user-images.githubusercontent.com/44497623/190233974-f33f72a2-992b-4f6f-8f9f-12a3c47ebb69.png)
 
+Выбираем npm
+
+В результате вы должны были успешно создать файл .eslintrc.json и увидеть его в своем каталоге.
+
+![Screen Shot 2022-09-15 at 00 32 16](https://user-images.githubusercontent.com/44497623/190235356-3a1d1dce-f004-4f1b-a7b7-5b3d96038ab3.png)
+
 
 
