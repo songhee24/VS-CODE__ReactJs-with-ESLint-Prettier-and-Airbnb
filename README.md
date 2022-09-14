@@ -45,9 +45,41 @@ ESLint — это программа, которая просматривает 
 
 После того как вы открыли проект.
 
-Откройте терминал в VSCode, выбрав View->Terminal или используя сочетание клавиш 
-- Windows Ctrl+` 
-- Mac Control+`
+Откройте терминал в VSCode, выбрав View->Terminal или используя сочетание клавиш:
+- Windows Ctrl + `
+- Mac Control + `
+
+`
+Дальше идет сам процесс установки ESLint
+
+Устанавливаем инструмент в наш проект командой:
+```
+npm install eslint --save-dev
+```
+![Screen Shot 2022-09-15 at 00 03 11](https://user-images.githubusercontent.com/44497623/190229196-7bb8051d-da30-4b87-854d-52b666535308.png)
 
 
+Дальше нужно запустить процесс инициализаций, который в дальнейшем и определить какой тип правил будет примен к вашему проекту.
+Для этого запускаем команду:
 
+```
+npx eslint --init
+```
+Во время инициализации вам будет задано несколько вопросов по настройке конфигурационного файла eslint.
+
+1. How would you like to use ESLint?
+   - To check syntax, find problems, and enforce code style
+2. What type of modules does your project use?
+   - JavaScript modules (import/export)
+3. Which framework does your project use?
+   - React
+4. Does your project use TypeScript?
+   - No
+5. Where does your code run? 
+   - Browser
+6. How would you like to define a style for your project? 
+   - Use a popular style guide
+7. Which style guide do you want to follow?
+   - Airbnb (https://github.com/airbnb/javascript)
+8. What format do you want your config file to be in? 
+   - JSON
