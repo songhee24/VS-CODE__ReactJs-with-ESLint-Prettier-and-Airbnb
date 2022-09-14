@@ -146,7 +146,7 @@ npx eslint --init
 }
 ```
 > Добавляем это правило в нашу копилку
-> _______
+>_______
 
 
 #### 2. "react/jsx-props-no-spreading"
@@ -162,7 +162,7 @@ npx eslint --init
 
 ```
 > Два праивла по счету идем дальше 
-> _______
+>_______
 
 
 #### 3.  "react/react-in-jsx-scope"
@@ -170,7 +170,7 @@ npx eslint --init
 > import React from 'react'; 
 > в файлах использующие jsx 
 ##### Параметры правила:
-> По умолчанию нужно импортировать реакт там где jsx код. Если вы хотите убрать это праивло, конфигурация будет такой:
+> По умолчанию нужно импортировать реакт там где jsx код. Если вы хотите убрать это правило, конфигурация будет такой:
 ``` 
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
@@ -179,5 +179,22 @@ npx eslint --init
 }
 
 ```
-> _______
+>_______
 
+### 4. "import/prefer-default-export"
+> Когда есть только один экспорт из файла, предпочтительнее использовать экспорт по умолчанию(export default), 
+> а не именованный экспорт(export const foo = 'foo').
+##### Параметры правила:
+> Если вы хотите убрать это правило, конфигурация будет такой:
+``` 
+"rules": {
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  "react/jsx-props-no-spreading": "off",
+   "react/react-in-jsx-scope": "off",
+   "import/prefer-default-export": "off",
+}
+
+```
+>_______
+
+### 5. "no-shadow": "off",
