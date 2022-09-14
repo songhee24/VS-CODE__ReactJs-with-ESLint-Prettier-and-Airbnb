@@ -69,17 +69,50 @@ npx eslint --init
 
 1. How would you like to use ESLint?
    - To check syntax, find problems, and enforce code style
+   
 2. What type of modules does your project use?
    - JavaScript modules (import/export)
+   
 3. Which framework does your project use?
    - React
+   
 4. Does your project use TypeScript?
    - No
+   
 5. Where does your code run? 
    - Browser
+   
 6. How would you like to define a style for your project? 
    - Use a popular style guide
+   
 7. Which style guide do you want to follow?
    - Airbnb (https://github.com/airbnb/javascript)
+
 8. What format do you want your config file to be in? 
    - JSON
+
+
+![Screen Shot 2022-09-15 at 00 15 06](https://user-images.githubusercontent.com/44497623/190231442-a2ed51ef-4617-44ba-aad0-a19b63bd5725.png)
+
+>________________
+> Сразу после этого вопроса eslint проверит, есть ли у вас отсутствующие зависимости, и если да, то предложит их установить.
+> В моем случае мне не хватало:
+> - eslint-plugin-react@^7.28.0 
+> - eslint-config-airbnb@latest 
+> - eslint@^7.32.0 || ^8.2.0 
+> - eslint-plugin-import@^2.25.3 
+> - eslint-plugin-jsx-a11y@^6.5.1 
+> - eslint-plugin-react-hooks@^4.3.0
+>________________
+
+```diff
+- Would you like to install them now with npm? - Yes
+```
+
+После того как вы нажали Yes. 
+У вас будет выбор через какой пакетный менеджер нужно установить: 
+
+![Screen Shot 2022-09-15 at 00 27 27](https://user-images.githubusercontent.com/44497623/190233974-f33f72a2-992b-4f6f-8f9f-12a3c47ebb69.png)
+
+
+
