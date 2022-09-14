@@ -41,7 +41,7 @@ ESLint — это программа, которая просматривает 
 ![image](https://user-images.githubusercontent.com/44497623/190227458-7de44648-3b04-4c53-9b71-a2fe523cc471.png)
 
 
-
+Теперь устанавливаем ESLint для поддержки нашего редактора кода просто переходя по [ссылке](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint#:~:text=If%20you%20haven't%20installed,eslintrc%20configuration%20file.)
 
 После того как вы открыли проект.
 
