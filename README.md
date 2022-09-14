@@ -1,6 +1,5 @@
 # VS-CODE__ReactJs-with-ESLint-Prettier-and-Airbnb
 
-![image](https://user-images.githubusercontent.com/44497623/190214062-12796bd1-8c59-4897-bc3e-f9dcf97aa495.png)
 
 ## Один из самых простых способов улучшить свой код — использовать линтер!
 
@@ -12,5 +11,22 @@
 Это синтаксический анализатор/инструмент, который проверяет код и отмечает ошибки, 
 опечатки или любую потенциальную ошибку в коде программиста.
 
+![image](https://user-images.githubusercontent.com/44497623/190224727-331ae1f3-7ef7-45a6-97fc-f5f50877898c.png)
+
 
 > Предварительное условие: у вас должны быть установлены [Visual Studio Code](https://code.visualstudio.com/) и [NodeJS](https://nodejs.org/en/).
+
+
+ ## И так Начнем
+### 1. Создать приложение ReactJS
+
+Давайте создадим приложение ReactJS и назовем его «eslint-app». Мы создадим приложение с помощью терминала.
+
+```npm
+npx create-react-app eslint-app 
+```
+Дальше нужно открыть наш проект через Vs Code. Чтобы в дальнейшем с ним работать.
+
+### 2. Установка ESLint
+
+![image](https://user-images.githubusercontent.com/44497623/190225171-c4e97f6f-4625-4191-8fd7-d45b9cceeef3.png)
