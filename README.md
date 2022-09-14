@@ -121,4 +121,11 @@ npx eslint --init
 ![Screen Shot 2022-09-15 at 00 32 16](https://user-images.githubusercontent.com/44497623/190235356-3a1d1dce-f004-4f1b-a7b7-5b3d96038ab3.png)
 
 
+### Внутри этого Файла такие настройки:
+
+![Screen Shot 2022-09-15 at 00 42 44](https://user-images.githubusercontent.com/44497623/190237241-71592bbe-1fc7-4100-a2c8-981e05d51b5a.png)
+
+Главное в этом файле это раздел `rules` в котором мы и будем переопределять некоторые правила которые пришли из aribinb
+
+## Начнем отключать некоторые правила и не только
 
