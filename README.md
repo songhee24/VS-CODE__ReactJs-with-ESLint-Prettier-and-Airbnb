@@ -532,9 +532,19 @@ npm i eslint-config-prettier eslint-plugin-prettier -D
 ![Screen Shot 2022-09-15 at 03 31 33](https://user-images.githubusercontent.com/44497623/190266338-b5d39dce-9e82-4285-a250-d27946a6757b.png)
 
 Это означает что правила кода работают и указывают мне что очень много ошибок в написани когда 
+
 Поэтому теперь нужно настроить последнее....
 
 При сохранении чтобы запускался Prettier и форматировал наш код под стандартами airbnb 
+
+Заходим в vs code
+1. Используйте Ctrl/Command + ,  или перейдите в File ->Preferences ->Settings.
+2. Ищем в строке поиска format on save
+   - находим нужный элемент иставим галочку
+
+
+![Screen Shot 2022-09-15 at 03 44 55](https://user-images.githubusercontent.com/44497623/190268515-4b59e9a1-df63-4378-89be-0b7352c5334c.png)
+
 
 
  
