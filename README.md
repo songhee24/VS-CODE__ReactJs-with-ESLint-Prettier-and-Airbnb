@@ -146,7 +146,7 @@ npx eslint --init
 }
 ```
 > Добавляем это правило в нашу копилку
-> 
+> _______
 
 
 #### 2. "react/jsx-props-no-spreading"
@@ -162,7 +162,22 @@ npx eslint --init
 
 ```
 > Два праивла по счету идем дальше 
-> 
+> _______
 
 
+#### 3.  "react/react-in-jsx-scope"
+> Это правило будет ругаться каждый раз если вы забудете использовать 
+> import React from 'react'; 
+> в файлах использующие jsx 
+##### Параметры правила:
+> По умолчанию нужно импортировать реакт там где jsx код. Если вы хотите убрать это праивло, конфигурация будет такой:
+``` 
+"rules": {
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  "react/jsx-props-no-spreading": "off",
+   "react/react-in-jsx-scope": "off",
+}
+
+```
+> _______
 
