@@ -142,7 +142,7 @@ npx eslint --init
 ##### Параметры правила:
 Набор разрешенных расширений настраивается. По умолчанию разрешен '.jsx'. Если вы хотите разрешить как «.jsx», так и «.js», конфигурация будет такой:
 ``` diff
- "rules": {
+    "rules": {
   + "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
 }
 ```
@@ -222,9 +222,9 @@ function b() {
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   "react/jsx-props-no-spreading": "off",
-   "react/react-in-jsx-scope": "off",
-   "import/prefer-default-export": "off",
- + "no-shadow": "off",
+  "react/react-in-jsx-scope": "off",
+  "import/prefer-default-export": "off",
++ "no-shadow": "off",
 }
 
 ```
@@ -243,10 +243,10 @@ function b() {
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   "react/jsx-props-no-spreading": "off",
-   "react/react-in-jsx-scope": "off",
-   "import/prefer-default-export": "off",
-   "no-shadow": "off",
- + "react-hooks/exhaustive-deps": "off",
+  "react/react-in-jsx-scope": "off",
+  "import/prefer-default-export": "off",
+  "no-shadow": "off",
++ "react-hooks/exhaustive-deps": "off",
 }
 
 ```
@@ -267,11 +267,11 @@ Only Call Hooks at the Top Level - это правило мы не отключ�
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   "react/jsx-props-no-spreading": "off",
-   "react/react-in-jsx-scope": "off",
-   "import/prefer-default-export": "off",
-   "no-shadow": "off",
-   "react-hooks/exhaustive-deps": "off",
- + "react-hooks/rules-of-hooks": "error",
+  "react/react-in-jsx-scope": "off",
+  "import/prefer-default-export": "off",
+  "no-shadow": "off",
+  "react-hooks/exhaustive-deps": "off",
++ "react-hooks/rules-of-hooks": "error",
 }
 
 ```
@@ -329,20 +329,20 @@ Only Call Hooks at the Top Level - это правило мы не отключ�
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   "react/jsx-props-no-spreading": "off",
-   "react/react-in-jsx-scope": "off",
-   "import/prefer-default-export": "off",
-   "no-shadow": "off",
-   "react-hooks/exhaustive-deps": "off",
-   "react-hooks/rules-of-hooks": "error",
-   "react/function-component-definition": "off",
- + "max-len": [
- +        "error",
- +    {
- +      "code": 100,
- +      "ignoreStrings": true,
- +      "ignoreTemplateLiterals": true,
- +      "ignoreRegExpLiterals": true
- +    }
+  "react/react-in-jsx-scope": "off",
+  "import/prefer-default-export": "off",
+  "no-shadow": "off",
+  "react-hooks/exhaustive-deps": "off",
+  "react-hooks/rules-of-hooks": "error",
+  "react/function-component-definition": "off",
++ "max-len": [
++        "error",
++    {
++      "code": 100,
++      "ignoreStrings": true,
++      "ignoreTemplateLiterals": true,
++      "ignoreRegExpLiterals": true
++    }
    ],
 }
 
