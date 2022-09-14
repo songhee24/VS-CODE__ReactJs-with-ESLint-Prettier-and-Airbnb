@@ -543,8 +543,20 @@ npm i eslint-config-prettier eslint-plugin-prettier -D
    - находим нужный элемент иставим галочку
 
 
-![Screen Shot 2022-09-15 at 03 44 55](https://user-images.githubusercontent.com/44497623/190268515-4b59e9a1-df63-4378-89be-0b7352c5334c.png)
+![Screen Shot 2022-09-15 at 03 44 55](https://user-images.githubusercontent.com/44497623/190269182-c7438e5a-88ea-4e31-9eb8-92ac9ef1fda7.png)
 
+
+После проверяем...
+
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/44497623/190269240-d768c457-b00e-4ddd-af77-04e0e3faeaf8.gif)
+
+
+### Поздравляем!
+
+Теперь, когда ваш проект ReactJS настроен в стиле ESLint, Prettier и Airbnb, 
+вы можете поддерживать согласованный и чистый код. 
+Вы также будете получать уведомления о проблемах с линтингом и форматированием.
 
 
  
