@@ -141,9 +141,9 @@ npx eslint --init
 
 ##### Параметры правила:
 Набор разрешенных расширений настраивается. По умолчанию разрешен '.jsx'. Если вы хотите разрешить как «.jsx», так и «.js», конфигурация будет такой:
-```
+```diff
 "rules": {
-  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  + "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
 }
 ```
 > Добавляем это правило в нашу копилку
@@ -157,10 +157,10 @@ npx eslint --init
 ##### Параметры правила:
 По умолчанию запрещено использовать. Если вы хотите разрешить {...props}, конфигурация будет такой:
 
-``` 
+``` diff
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-  "react/jsx-props-no-spreading": "off",
++ "react/jsx-props-no-spreading": "off",
 }
 
 ```
@@ -177,11 +177,11 @@ import React from 'react';
 По умолчанию нужно импортировать реакт там где jsx код. Если вы хотите убрать это правило, конфигурация будет такой:
 
 
-``` 
+```diff 
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   "react/jsx-props-no-spreading": "off",
-   "react/react-in-jsx-scope": "off",
++ "react/react-in-jsx-scope": "off",
 }
 
 ```
@@ -193,12 +193,12 @@ import React from 'react';
 
 ##### Параметры правила:
 Если вы хотите убрать это правило, конфигурация будет такой:
-``` 
+```diff 
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   "react/jsx-props-no-spreading": "off",
-   "react/react-in-jsx-scope": "off",
-   "import/prefer-default-export": "off",
+  "react/react-in-jsx-scope": "off",
++ "import/prefer-default-export": "off",
 }
 
 ```
@@ -218,20 +218,20 @@ function b() {
 ##### Параметры правила:
 Если вы хотите убрать это правило, конфигурация будет такой:
 
-``` 
+```diff 
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   "react/jsx-props-no-spreading": "off",
    "react/react-in-jsx-scope": "off",
    "import/prefer-default-export": "off",
-   "no-shadow": "off",
+ + "no-shadow": "off",
 }
 
 ```
 
 >_______
 
-### 5.  "react-hooks/exhaustive-deps"
+### 6.  "react-hooks/exhaustive-deps"
 Правило «react-hooks/exhaustive-deps» предупреждает нас, когда у нас отсутствует зависимость в хуке эффекта.
 Иногда это правило раздражает когда вам нужно постоянно отдавать в качестве зависимостей функцию  
 
@@ -239,21 +239,21 @@ function b() {
 ##### Параметры правила:
 Если вы хотите убрать это правило, конфигурация будет такой:
 
-``` 
+```diff 
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   "react/jsx-props-no-spreading": "off",
    "react/react-in-jsx-scope": "off",
    "import/prefer-default-export": "off",
    "no-shadow": "off",
-   "react-hooks/exhaustive-deps": "off",
+ + "react-hooks/exhaustive-deps": "off",
 }
 
 ```
 
 >_______
 
-### 5. "react-hooks/rules-of-hooks"
+### 7. "react-hooks/rules-of-hooks"
 Only Call Hooks at the Top Level - это правило мы не отключаем а переопределяем. 
 На самом деле это распространённое правило при использовании хуков 
 Не вызывайте хуки внутри циклов, условий или вложенных функций.
@@ -263,7 +263,7 @@ Only Call Hooks at the Top Level - это правило мы не отключ�
 Чтобы использовать это правило нужно изменить `rules` как мы до этого делали и еще кое что..
 Сначала меняем `rules:`
 
-``` 
+```diff 
 "rules": {
   "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   "react/jsx-props-no-spreading": "off",
@@ -271,7 +271,7 @@ Only Call Hooks at the Top Level - это правило мы не отключ�
    "import/prefer-default-export": "off",
    "no-shadow": "off",
    "react-hooks/exhaustive-deps": "off",
-   "react-hooks/rules-of-hooks": "error",
+ + "react-hooks/rules-of-hooks": "error",
 }
 
 ```
@@ -286,8 +286,66 @@ Only Call Hooks at the Top Level - это правило мы не отключ�
 Кончено мы в самом начале уже установили некоторые плагины просто их нужно подключить, "react" уже подключен. 
 Подключим теперь плагин под названием "react-hooks" который тоже во время конфигурации был установлен.
 
+```diff
+  "plugins": [
+  "react", 
++ "react-hooks"
+ ],
 ```
-  "plugins": ["react", "react-hooks"],
+>_______
+
+
+
+### 8. "react/function-component-definition"
+И так правило гласит какой именно тип функции вы будете использовать при функциональных компонентах
+
+##### Параметры правила:
+Если вы хотите убрать это правило, конфигурация будет такой:
+
+```diff 
+"rules": {
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  "react/jsx-props-no-spreading": "off",
+  "react/react-in-jsx-scope": "off",
+  "import/prefer-default-export": "off",
+  "no-shadow": "off",
+  "react-hooks/exhaustive-deps": "off",
+  "react-hooks/rules-of-hooks": "error",
++ "react/function-component-definition": "off",
+}
+
 ```
 
+>_______
+
+### 9. "react/function-component-definition"
+
+Очень длинные строки кода на любом языке могут быть трудны для чтения. Чтобы облегчить читаемость и удобство сопровождения, многие программисты разработали соглашение, ограничивающее количество строк кода до X символов (традиционно 80 символов).
+
+##### Параметры правила:
+Мы настраиваем это правило вот таким образом: 
+
+```diff
+"rules": {
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  "react/jsx-props-no-spreading": "off",
+   "react/react-in-jsx-scope": "off",
+   "import/prefer-default-export": "off",
+   "no-shadow": "off",
+   "react-hooks/exhaustive-deps": "off",
+   "react-hooks/rules-of-hooks": "error",
+   "react/function-component-definition": "off",
+ + "max-len": [
+ +        "error",
+ +    {
+ +      "code": 100,
+ +      "ignoreStrings": true,
+ +      "ignoreTemplateLiterals": true,
+ +      "ignoreRegExpLiterals": true
+ +    }
+   ],
+}
+
+```
+```
 
