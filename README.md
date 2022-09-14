@@ -348,4 +348,75 @@ Only Call Hooks at the Top Level - это правило мы не отключ�
 }
 
 ```
+>_______
 
+### 10. "no-console"
+
+Это правило запрещает вызовы или присвоения методов объекта консоли. То есть нужно убирать за собой мусор
+
+##### Параметры правила:
+Мы настраиваем это правило вот таким образом, где просто предупреждаем не использовать консоль:
+
+``` diff
+"rules": {
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  "react/jsx-props-no-spreading": "off",
+  "react/react-in-jsx-scope": "off",
+  "import/prefer-default-export": "off",
+  "no-shadow": "off",
+  "react-hooks/exhaustive-deps": "off",
+  "react-hooks/rules-of-hooks": "error",
+  "react/function-component-definition": "off",
+  "max-len": [
+         "error",
+     {
+       "code": 100,
+       "ignoreStrings": true,
+       "ignoreTemplateLiterals": true,
+       "ignoreRegExpLiterals": true
+     }
+   ],
++ "no-console": ["warn", { "allow": ["warn", "error"] }],
+}
+
+```
+
+>_______
+
+### 11.  "jsx-a11y/label-has-associated-control"
+Это правило проверяет, что любой тег label (или указанный пользовательский компонент, который будет выводить тег метки) либо (1) является оболочкой элемента ввода (или указанного пользовательского компонента, который выводит входной тег), либо (2) имеет атрибут htmlFor и что тег label имеет текстовое содержимое.
+
+##### Параметры правила:
+Мы настраиваем это правило вот таким образом:
+
+``` diff
+"rules": {
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  "react/jsx-props-no-spreading": "off",
+  "react/react-in-jsx-scope": "off",
+  "import/prefer-default-export": "off",
+  "no-shadow": "off",
+  "react-hooks/exhaustive-deps": "off",
+  "react-hooks/rules-of-hooks": "error",
+  "react/function-component-definition": "off",
+  "max-len": [
+         "error",
+     {
+       "code": 100,
+       "ignoreStrings": true,
+       "ignoreTemplateLiterals": true,
+       "ignoreRegExpLiterals": true
+     }
+   ],
+  "no-console": ["warn", { "allow": ["warn", "error"] }],
++ "jsx-a11y/label-has-associated-control": [
++        "error",
++        {
++           "required": {
++              "some": ["nesting", "id"]
++           }
++        }
++     ],
+}
+
+```
