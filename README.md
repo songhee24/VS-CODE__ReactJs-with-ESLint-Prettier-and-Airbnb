@@ -1,4 +1,4 @@
-# ReactJs-with-ESLint-Prettier-and-Airbnb
+# VS-CODE__ReactJs-with-ESLint-Prettier-and-Airbnb
 
 ![image](https://user-images.githubusercontent.com/44497623/190214062-12796bd1-8c59-4897-bc3e-f9dcf97aa495.png)
 
@@ -11,3 +11,6 @@
 
 Это синтаксический анализатор/инструмент, который проверяет код и отмечает ошибки, 
 опечатки или любую потенциальную ошибку в коде программиста.
+
+
+> Предварительное условие: у вас должны быть установлены [Visual Studio Code](https://code.visualstudio.com/) и [NodeJS](https://nodejs.org/en/).
