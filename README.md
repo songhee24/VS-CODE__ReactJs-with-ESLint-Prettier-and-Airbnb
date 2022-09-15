@@ -511,7 +511,7 @@ npm i eslint-config-prettier eslint-plugin-prettier -D
 К примеру если написать:
 ```
 {
-   "singleQuote": true,
+   "semi": false,
 }
 ```
 То он всегда будет форматировать убирая точку с запятой после объявления переменных, вызова функции и.т.д
