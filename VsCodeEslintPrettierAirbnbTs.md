@@ -90,3 +90,43 @@ Let's create .eslintrc file in the root of the project and paste next code:
 }
 ```
 
+and add .eslintignore file for prevent lint checking for specific files:
+
+```
+// .eslintignore
+.idea
+.storybook
+.config
+node_modules/*
+config/*
+public/*
+scripts/*
+src/react-app-env.d.ts
+src/reportWebVitals.ts
+```
+
+## Prettier config
+Let's create .prettierrc file in the root of the project and paste next code:
+```
+// .prettierrc
+{
+  "arrowParens": "always",
+  "singleQuote": true,
+  "printWidth": 100,
+  "jsxBracketSameLine": false,
+  "trailingComma": "none"
+}
+```
+
+## Scripts
+In package.json you can add next scripts:
+```
+// package.json
+"scripts": {
+  "start": "node scripts/start.js",
+  "build": "node scripts/build.js",
+  "test": "node scripts/test.js",
+  "lint": "eslint src", // just check errors
+  "lint-fix": "eslint src --quiet --fix" // fix lint errors
+}
+```
